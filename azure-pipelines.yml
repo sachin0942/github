@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 stages:
-- stage: deploy
+- stage: Deploy
   jobs:
   - deployment: DeployWeb
     displayName: deploy Web App
