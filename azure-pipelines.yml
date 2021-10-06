@@ -11,7 +11,6 @@ stages:
   jobs:
   - deployment: DeployWeb
     displayName: deploy Web App
-    environment: 'Dev'
     strategy:
       runOnce:
         deploy:
