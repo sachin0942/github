@@ -7,6 +7,8 @@
 pool: 
   name: Default 
 
+variables:
+- group: var-grp
 stages:
 - stage: Deploy
   jobs:
@@ -19,3 +21,4 @@ stages:
           steps:
           - script: echo $(System.AccessToken)
           - script: echo '$(Build.BuildNumber)'
+          - script: echo Username: '$(username)'
